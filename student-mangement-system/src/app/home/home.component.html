@@ -1,0 +1,24 @@
+<!-- hello there!!! -->
+<table>
+  <thead>
+      <tr>
+          <th>S.No.</th>
+          <th>Student</th>
+          <th>Subject</th>
+          <th>Marks</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data">
+      <td>{{ item.sno }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.subject }}</td>
+      <td>{{ item.marks }}</td>
+      <td>
+        <button class="action-button">Update</button> <!-- Action button -->
+      </td>
+
+    </tr>
+  </tbody>
+</table>
